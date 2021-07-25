@@ -1,0 +1,212 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+    <script src="main.js"></script>
+    <script type="text/javascript">
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title> Dress-Up Game</title>
+
+</head>
+
+<body>
+    <!-- Home section starts  -->
+    <section id="home" class="home">
+        <!--  Navbar starts -->
+
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <!-- <img src="logo.png" alt="" width="58" height="55" class="d-inline-block align-text-top"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" style="color: rgb(255, 255, 255);">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#game">PLAY-GAME!</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </section>
+    <!-- navbar ends -->
+    <!-- Home section text starts -->
+    <section class="main">
+
+
+        <img class="shopgirl" src="shoppingg.png" />
+        <img class="hanger" src="hanger_img.png" />
+
+
+        <div class="content">
+
+
+
+
+
+
+            <span class="flicker"> <h2>SARAH SAYS DRESS ME UP !!</h2></span>
+
+            <h4> Experience your favourite childhood dress up game again!
+            </h4>
+            <a href="#game"> <input type="submit" class="btn btn-outline-light" value="PLAY NOW"  onclick='play();'></a>
+        </div>
+
+        <!-- Home section text ends -->
+
+    </section>
+    <!-- Home section ends here  -->
+
+    <!-- Game section starts  -->
+
+    <section class="game" id="game" tabindex="-1">
+
+
+        <div class="container">
+            <ul>
+                <li><button class="btn btn-success" id="hair_button" type="button">Accessories</button></li>
+                <li><button class="btn btn-success" id="dress_button" type="button">Dresses</button></li>
+
+                <li><button class="btn btn-success" id="shirt_button" type="button">Tops</button></li>
+
+
+
+                <li><button class="btn btn-success" id="pant_button" type="button">Bottoms</button></li>
+                <li><button class="btn btn-success" id="shoe_button" type="button">Shoes</button></li>
+                </li>
+            </ul>
+            <!-- Background images and posters -->
+
+            <img class="poster" src="makeup.png" />
+            <img class="poster2" src="poster2.png" />
+
+
+
+
+
+            <!-- Model girl character  -->
+
+            <img id="girl" src="girl.png" />
+
+            <!-- Dressup starts  -->
+
+            <img id="hair1" class="hair" src="hair01.png" />
+
+            <img id="hair2" class="hair" src="hair2.png" />
+
+            <img id="hair3" class="hair" src="hair3.png" />
+            <img id="hair4" class="hair" src="hair4.png" />
+
+            <img id="hair5" class="hair" src="" />
+
+            <img id="dress1" class="dress" src="dress1.png" />
+
+            <img id="dress2" class="dress" src="dress2.png" />
+
+            <img id="dress3" class="dress" src="dress3.png" />
+
+            <img id="dress4" class="dress" src="dress4.png" />
+
+
+
+            <img id="dress5" class="dress" src="" />
+
+            <img id="top1" class="shirt" src="top1.png" />
+
+            <img id="top2" class="shirt" src="top2.png" />
+
+            <img id="top3" class="shirt" src="top03.png" />
+
+            <img id="top4" class="shirt" src="top04.png" />
+
+            <img id="top5" class="shirt" src="" />
+
+
+            <img id="bottom1" class="pant" src="bottom1.png" />
+
+            <img id="bottom2" class="pant" src="bottom2.png" />
+
+            <img id="bottom3" class="pant" src="bottom3.png" />
+
+            <img id="bottom4" class="pant" src="bottom4.png" />
+
+
+
+            <img id="bottom5" class="pant" src="" />
+
+            <img id="shoes1" style="z-index: 3" class="shoe" src="shoe1.png" />
+
+            <img id="shoes2" class="shoe" src="shoe2.png" />
+
+            <img id="shoes3" class="shoe" src="shoe3.png" />
+
+            <img id="shoes4" class="shoe" src="" />
+
+
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
